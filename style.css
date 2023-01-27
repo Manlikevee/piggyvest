@@ -585,6 +585,8 @@ color: #287AF2;
   .buildingblock{
     width: 100%;
     padding: 20px;
+    overflow-y: hidden;
+    overflow-y: hidden;
   }
 
   .buildsavings .buildtext .bwti{

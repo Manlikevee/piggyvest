@@ -691,6 +691,9 @@ margin-bottom: 10px;
         flex-direction: column;
         overflow: hidden;
     }
+    .buildingblock {
+        overflow: hidden;
+    }
 .bpoint{
     margin-top: 90px;
     display: none;

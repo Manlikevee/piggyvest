@@ -84,6 +84,27 @@ nav{
     |-----------------------------------
     */
   }
+
+
+  ::-webkit-scrollbar {
+    width: 1px; 
+     background-color: rgba(0,0,0,0);
+    -webkit-border-radius: 80px;
+  }
+  ::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0,0,0,0.61);
+    -webkit-border-radius: 80px;
+  }
+  ::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0,0,0,0.61);
+    -webkit-border-radius: 80px;
+  }
+
+
   .navscroll{
     background-color: white !important;
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);

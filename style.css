@@ -606,19 +606,72 @@ color: #287AF2;
     width: 100%;
     height: 100%;
     display: flex;
+    background-color: 
+    #0D60D8;
+  }
+
+  .som{
+color: white;
+font-size: 50px;
+font-weight: 700;
+line-height: 75px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+  
+
+  .meet{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-family: inter;
+font-size: 15px;
+font-weight: 500;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+
+  }
+
+  .meet svg{
+    margin-right: 10px;
   }
 
   .saveone{
     width: 100%;
     
-    padding: 90px;
+    padding:124px;
+    padding-top: 80px;
   }
+.savetext{
+    margin-top: 10px;
+    color: white;
+    font-family: inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+padding-bottom: 20px;
 
+}
   .savetwo{
     width: 90%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('https://images.unsplash.com/photo-1516013474378-d6498f0d1434?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-position: center;
+    -webkit-transition: background-image 0.5s linear;
+    background-image: url('https://images.unsplash.com/photo-1647616927583-1d44a79a38a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+  }
+
+  .savetwo:hover{
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1647616907232-c47755e74ed1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
   }
 
   .buildtext{
@@ -637,7 +690,8 @@ color: #287AF2;
   }
 
   .buildsavings .buildtext .bwti{
-    font-size: 35px;
+    font-size: 40px;
+    
     line-height: 48.08px;
 
 font-weight: 600;
@@ -674,19 +728,48 @@ text-align: left;
  flex-direction: column;
     height: 100%;
     border-radius: 15px;
-    padding: 30px;
+    padding: 35px;
     background-color: #f9f9f9;
     width: 100%;
+    transition: 0.6s;
+    cursor: pointer;
+ 
   }
+
+
+  .bx1:hover, .bx2:hover{
+    background-color: 
+    #E0EFFF;
+
+
+     }
+
+     .bx3:hover{
+     
+        background-color: #E4FFF1;
+     }
+
+     .bx4:hover{
+        background-color: 
+        #FDE7F5;
+     }
 
   .boxlink{
     margin-top: auto;
-    padding-top: 10px;
+    padding-top: 14px;
     display: flex;
+    align-items: center;
+    font-family: DM Sans;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
   }
 
   .boxlink svg{
-    margin-right: 5px;
+    margin-right: 9px;
   }
 
   .boxtitle{
@@ -709,7 +792,7 @@ font-weight: 400;
 line-height: 20px;
 letter-spacing: 0em;
 text-align: left;
-margin-bottom: 10px;
+margin-bottom: 24px;
 
 
   }
@@ -804,6 +887,11 @@ text-align: left;
         flex-direction: column;
         overflow: hidden;
     }
+    .buildsavings .buildtext .bwti{
+        text-align: center;
+        font-size: 32px;
+        line-height: 38px;
+    }
     .saverflex{
         flex-direction: column;
     }
@@ -838,7 +926,7 @@ text-align: left;
         flex-direction: column;
     }
     .buildingblock {
-        overflow: hidden;
+      
     }
     .accessone img {
         max-width: 220px;

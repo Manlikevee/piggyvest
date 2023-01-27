@@ -129,6 +129,18 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
     reset: false
   });
 
+  ScrollReveal().reveal('.savetwo',{
+    delay: 75,
+    duration: 1400,
+    opacity: 0,
+    distance: "50%",
+    origin: "left",
+    easing     : 'ease-in',
+    reset: false
+  });
+
+
+  
 
   ScrollReveal().reveal('.bwti',{
     delay: 195,
@@ -140,6 +152,27 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
   });
 
 
+  
+
+  ScrollReveal().reveal('.som',{
+    delay: 195,
+    duration: 1900,
+    opacity: 0,
+    distance: "50%",
+    origin: "bottom",
+    reset: false
+  });
+
+  ScrollReveal().reveal('.saveone',{
+    delay: 95,
+    duration: 1400,
+    opacity: 0,
+    distance: "50%",
+    origin: "top",
+    easing     : 'ease-in',
+    reset: false
+  });
+
   ScrollReveal().reveal('.bx1',{
     delay: 75,
     duration: 1500,
@@ -149,6 +182,18 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
     origin: "bottom",
     reset: false
   });
+
+  ScrollReveal().reveal('.savetext',{
+    delay: 75,
+    duration: 1500,
+    opacity: 0,
+    distance: "60%",
+    easing     : 'ease-out',
+    origin: "bottom",
+    reset: false
+  });
+
+  
 
   ScrollReveal().reveal('.bx2',{
     delay: 105,
@@ -190,6 +235,17 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
     origin: "top",
     reset: false
   });
+
+  ScrollReveal().reveal('.meet',{
+    delay: 55,
+    duration: 1000,
+    opacity: 0,
+    distance: "80%",
+    origin: "right",
+    reset: false
+  });
+
+  
 
 
   ScrollReveal().reveal('.sidea',{

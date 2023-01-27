@@ -1077,6 +1077,9 @@ left: -15%;
             position: absolute;
             right: 11%;
         }
+        .columntwo {
+            margin-top: -47px;
+        }
         .image-stack__item--top {
             right: 16%;
             width: 67%;

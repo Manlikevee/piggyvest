@@ -175,7 +175,46 @@ window.addEventListener("scroll", function() {
   });
 
 
+  
+  ScrollReveal().reveal('.svgside',{
+    delay: 105,
+    duration: 2000,
+    opacity: 0,
+    distance: "90%",
+    origin: "left",
+    reset: false
+  });
 
+
+  ScrollReveal().reveal('.sidea',{
+    delay: 125,
+    duration: 1900,
+    opacity: 0,
+    distance: "90%",
+    origin: "top",
+    reset: false
+  });
+  
+
+  ScrollReveal().reveal('.sideb',{
+    delay: 145,
+    duration: 1900,
+    opacity: 0,
+    distance: "90%",
+    origin: "right",
+    reset: false
+  });
+
+  ScrollReveal().reveal('.sidec',{
+    delay: 145,
+    duration: 1900,
+    opacity: 0,
+    distance: "90%",
+    origin: "right",
+    reset: false
+  });
+  
+  
 
 
   

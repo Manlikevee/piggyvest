@@ -79,14 +79,14 @@ window.addEventListener("scroll", function() {
   }
 });
 
-// gsap.fromTo(".tween", {stagger: 0.9, y:18,  yoyo: true}, {x:18 ,   repeat:-1,  duration:1.2, yoyo: true});
+gsap.fromTo(".tween", {stagger: 0.9, y:18,  yoyo: true}, {x:18 ,   repeat:-1,  duration:1.2, yoyo: true});
 
-// gsap.to(".tweena" , {stagger: 0.5, y:18, fill:"yellow",  duration:0.8, repeat:-1, yoyo: true});
+gsap.to(".tweena" , {stagger: 0.5, y:18, fill:"yellow",  duration:0.8, repeat:-1, yoyo: true});
 
 
-// gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
-//     amount:1.2, from:"edges", ease:"bounce"
-//   }})
+gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
+    amount:1.2, from:"edges", ease:"bounce"
+  }})
 
 
 
@@ -140,37 +140,41 @@ window.addEventListener("scroll", function() {
 
   ScrollReveal().reveal('.bx1',{
     delay: 75,
-    duration: 1900,
+    duration: 1500,
     opacity: 0,
-    distance: "90%",
+    distance: "60%",
+    easing     : 'ease-out',
     origin: "bottom",
     reset: false
   });
 
   ScrollReveal().reveal('.bx2',{
     delay: 105,
-    duration: 1900,
+    duration: 1500,
     opacity: 0,
-    distance: "90%",
+    distance: "80%",
     origin: "bottom",
+    easing     : 'ease-out',
     reset: false
   });
 
   ScrollReveal().reveal('.bx3',{
     delay: 155,
-    duration: 1900,
+    duration: 1500,
     opacity: 0,
-    distance: "90%",
-    origin: "top",
+    distance: "80%",
+    origin: "bottom",
+    easing     : 'ease-in',
     reset: false
   });
 
   ScrollReveal().reveal('.bx4',{
     delay: 195,
-    duration: 1000,
+    duration: 1500,
     opacity: 0,
-    distance: "90%",
+    distance: "80%",
     origin: "bottom",
+    easing     : 'ease-in',
     reset: false
   });
 

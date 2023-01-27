@@ -177,7 +177,7 @@ window.addEventListener("scroll", function() {
 
   
   ScrollReveal().reveal('.svgside',{
-    delay: 105,
+    delay: 55,
     duration: 1000,
     opacity: 0,
     distance: "90%",
@@ -187,7 +187,7 @@ window.addEventListener("scroll", function() {
 
 
   ScrollReveal().reveal('.sidea',{
-    delay: 125,
+    delay: 65,
     duration: 1000,
     opacity: 0,
     distance: "90%",
@@ -197,7 +197,7 @@ window.addEventListener("scroll", function() {
   
 
   ScrollReveal().reveal('.sideb',{
-    delay: 145,
+    delay: 75,
     duration: 1000,
     opacity: 0,
     distance: "90%",
@@ -206,7 +206,7 @@ window.addEventListener("scroll", function() {
   });
 
   ScrollReveal().reveal('.sidec',{
-    delay: 145,
+    delay: 75,
     duration: 1000,
     opacity: 0,
     distance: "90%",

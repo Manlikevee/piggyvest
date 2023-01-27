@@ -689,6 +689,7 @@ margin-bottom: 10px;
   @media screen and (max-width:1200px) {
     .buildsavings{
         flex-direction: column;
+        overflow: hidden;
     }
 .bpoint{
     margin-top: 90px;

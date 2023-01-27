@@ -97,6 +97,7 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
     opacity: 0,
     distance: "50%",
     origin: "bottom",
+    easing     : 'ease-out',
     reset: false
   });
 
@@ -120,10 +121,11 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
 
   ScrollReveal().reveal('.columnone',{
     delay: 75,
-    duration: 1500,
+    duration: 1400,
     opacity: 0,
     distance: "50%",
     origin: "left",
+    easing     : 'ease-in',
     reset: false
   });
 

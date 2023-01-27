@@ -180,7 +180,7 @@ window.addEventListener("scroll", function() {
     delay: 55,
     duration: 1000,
     opacity: 0,
-    distance: "90%",
+    distance: "30%",
     origin: "left",
     reset: false
   });
@@ -190,7 +190,7 @@ window.addEventListener("scroll", function() {
     delay: 65,
     duration: 1000,
     opacity: 0,
-    distance: "90%",
+    distance: "30%",
     origin: "top",
     reset: false
   });
@@ -200,7 +200,7 @@ window.addEventListener("scroll", function() {
     delay: 75,
     duration: 1000,
     opacity: 0,
-    distance: "90%",
+    distance: "30%",
     origin: "right",
     reset: false
   });
@@ -209,7 +209,7 @@ window.addEventListener("scroll", function() {
     delay: 75,
     duration: 1000,
     opacity: 0,
-    distance: "90%",
+    distance: "30%",
     origin: "right",
     reset: false
   });

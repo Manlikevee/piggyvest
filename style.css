@@ -1071,7 +1071,46 @@ left: -15%;
 
 
     @media screen and (max-width:480px) {
-
+        .image-stack__item--bottom {
+            width: 67%;
+            object-fit: contain;
+            position: absolute;
+            right: 11%;
+        }
+        .image-stack__item--top {
+            right: 16%;
+            width: 67%;
+            object-fit: contain;
+        }
+        .floatingobjects {
+          
+            left: 11%;
+            top: 23px;
+        }
+        
+        .iconone {
+            margin-right: 0px;
+            position: relative;
+            left: 0%;
+            top: 2px;
+        }
+        .rent {
+            margin-right: 107px;
+            object-fit: contain;
+            position: relative;
+            top: 92px;
+            left: -81px;
+        }
+        .dot {
+            position: relative;
+            top: 116px;
+            left: -8px;
+        }
+        .circle {
+            position: relative;
+            top: -130px;
+            left: 239px;
+        }
   }
 
 }

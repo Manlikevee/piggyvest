@@ -79,14 +79,14 @@ window.addEventListener("scroll", function() {
   }
 });
 
-gsap.fromTo(".tween", {stagger: 0.9, y:18,  yoyo: true}, {x:18 ,   repeat:-1,  duration:1.2, yoyo: true});
+// gsap.fromTo(".tween", {stagger: 0.9, y:18,  yoyo: true}, {x:18 ,   repeat:-1,  duration:1.2, yoyo: true});
 
-gsap.to(".tweena" , {stagger: 0.5, y:18, fill:"yellow",  duration:0.8, repeat:-1, yoyo: true});
+// gsap.to(".tweena" , {stagger: 0.5, y:18, fill:"yellow",  duration:0.8, repeat:-1, yoyo: true});
 
 
-gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
-    amount:1.2, from:"edges", ease:"bounce"
-  }})
+// gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
+//     amount:1.2, from:"edges", ease:"bounce"
+//   }})
 
 
 

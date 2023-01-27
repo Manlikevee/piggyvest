@@ -164,7 +164,7 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
     opacity: 0,
     distance: "80%",
     origin: "bottom",
-    easing     : 'ease-in',
+    easing     : 'ease-out',
     reset: false
   });
 
@@ -174,7 +174,7 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
     opacity: 0,
     distance: "80%",
     origin: "bottom",
-    easing     : 'ease-in',
+    easing     : 'ease-out',
     reset: false
   });
 

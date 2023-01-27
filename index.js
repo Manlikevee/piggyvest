@@ -180,7 +180,7 @@ window.addEventListener("scroll", function() {
     delay: 55,
     duration: 1000,
     opacity: 0,
-    distance: "30%",
+    distance: "50%",
     origin: "top",
     reset: false
   });
@@ -190,7 +190,7 @@ window.addEventListener("scroll", function() {
     delay: 65,
     duration: 1000,
     opacity: 0,
-    distance: "30%",
+    distance: "50%",
     origin: "top",
     reset: false
   });
@@ -200,7 +200,7 @@ window.addEventListener("scroll", function() {
     delay: 75,
     duration: 1000,
     opacity: 0,
-    distance: "30%",
+    distance: "50%",
     origin: "bottom",
     reset: false
   });
@@ -209,12 +209,50 @@ window.addEventListener("scroll", function() {
     delay: 75,
     duration: 1000,
     opacity: 0,
-    distance: "30%",
+    distance: "50%",
     origin: "bottom",
     reset: false
   });
   
   
 
+  ScrollReveal().reveal('.accessone',{
+    delay: 35,
+    duration: 1000,
+    opacity: 0,
+    distance: "50%",
+    origin: "top",
+    reset: false
+  });
+
+  ScrollReveal().reveal('.accesstwo',{
+    delay: 95,
+    duration: 1000,
+    opacity: 0,
+    distance: "50%",
+    origin: "bottom",
+    reset: false
+  });
+
+  ScrollReveal().reveal('.bigtxt',{
+    delay: 35,
+    duration: 1000,
+    opacity: 0,
+    distance: "50%",
+    origin: "left",
+    reset: false
+  });
+
+  ScrollReveal().reveal('.interesttext',{
+    delay: 195,
+    duration: 2600,
+    opacity: 0,
+    distance: "50%",
+    origin: "left",
+    reset: false
+  });
+  
+
+  
 
   

@@ -632,6 +632,9 @@ text-align: left;
 
   }
 
+  .dropdown-toggler{
+    cursor: pointer;
+  }
   .buildingblock{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -686,13 +689,136 @@ margin-bottom: 10px;
   }
 
 
+  .accessinvestment{
+    margin-top: 94px;
+    display: flex;
+    width: 100%;
+  }
+
+  .accessone{
+    width: 70%;
+  } 
+  .interest{
+    background-color: #f7f0ff;
+    margin-bottom: 20px;
+    color: #7913E5;
+    font-family: DM Sans;
+font-size: 14px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+    padding: 10px;
+ 
+    width: fit-content;
+    border-radius: 10px;
+  }
+  .accesstwo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .accessone{
+    padding-right: 90px;
+    display: flex;
+    margin-left: auto;
+
+  }
+  .extra{
+    z-index: -99999;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .circles {
+    position: absolute;
+    margin-top: 106px;
+    left: -40px;
+}
+svg.dots.investIcon{
+    position: absolute;
+    margin-top: 5px;
+    left: 320px
+}
+  .accessone img{
+    max-width: 220px;
+    display: flex;
+    margin-left: auto;
+    object-fit: cover;
+  }
+
+
+  .bigtxt{
+color: #0C1825;
+font-size: 60px;
+font-weight: 700;
+line-height: 70px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+
+  .interesttext{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: DM Sans;
+font-size: 17px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
   @media screen and (max-width:1200px) {
     .buildsavings{
         flex-direction: column;
         overflow: hidden;
     }
+    .bigtxt{
+        text-align: center;
+    }
+    .interesttext{
+        text-align: center;
+    }
+    .extra {
+        z-index: -99999;
+        position: absolute;
+        display: flex;
+        left: 33%;
+        margin-left: auto;
+    }
+    .accesstwo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .accessinvestment{
+        flex-direction: column;
+    }
     .buildingblock {
         overflow: hidden;
+    }
+    .accessone img {
+        max-width: 220px;
+        display: flex;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    .accessone {
+        padding-right: 0;
+        display: flex;
+        margin: auto;
+        width: 100%;
     }
 .bpoint{
     margin-top: 90px;
@@ -824,6 +950,17 @@ left: -15%;
     .sectionone {
         height: fit-content;
     }
+    .extra {
+
+        left: 30%;
+      
+    }
+    .bigtxt {
+        color: #0C1825;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 48px;
+    }
 .twocolumnflex{
 
     max-width: 600px;
@@ -896,6 +1033,11 @@ left: -15%;
         margin-top: 90px;
         padding: 20px;
     }
+    .extra {
+
+        left: 26%;
+        margin-left: auto;
+    }
     .image-stack {
         left: 14%;
     }
@@ -941,6 +1083,17 @@ left: -15%;
     .image-stack {
         left: 0%;
     }
+    .bigtxt {
+        color: #0C1825;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    .extra {
+
+        left: 22%;
+        margin-left: auto;
+    }
     .image-stack__item--top {
         right: 9px;
     }
@@ -957,6 +1110,9 @@ left: -15%;
 
   @media screen and (max-width:730px) {
     
+    .bigtxt{
+        text-align: center;
+    }
     .columnone{
         padding: 4px !important;
     }
@@ -1018,6 +1174,12 @@ left: -15%;
         position: absolute;
         right: 15%;
     }
+    .extra {
+
+        left: 16%;
+        margin-left: auto;
+    }
+
     .image-stack__item--top {
         right: 21%;
     }    
@@ -1046,6 +1208,11 @@ left: -15%;
     }
     .image-stack__item--top {
         right: 16%;
+    }
+    .extra {
+
+        left: 8%;
+        margin-left: auto;
     }
 
     .mylogo{
@@ -1088,6 +1255,12 @@ width: 130px;
             position: absolute;
             right: 11%;
         }
+
+        .extra {
+
+            left: 4%;
+            margin-left: auto;
+        }
         .columntwo {
             margin-top: -47px;
         }
@@ -1127,4 +1300,39 @@ width: 130px;
         }
   }
 
+
+}
+
+
+@media screen and (max-width:400px) {
+    .extra {
+
+        left: 0%;
+        margin-left: auto;
+    }
+    .circles {
+        position: absolute;
+        margin-top: 106px;
+        left: 3px;
+    }
+    svg.dots.investIcon {
+        position: absolute;
+        margin-top: 5px;
+        left: 297px;
+    }
+    .accessone img {
+        max-width: 190px;
+        display: flex;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    .bigtxt {
+        color: #0C1825;
+        font-size: 34px;
+        text-align: center;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
 }

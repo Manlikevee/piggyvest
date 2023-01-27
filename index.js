@@ -143,7 +143,7 @@ window.addEventListener("scroll", function() {
     duration: 1900,
     opacity: 0,
     distance: "90%",
-    origin: "left",
+    origin: "bottom",
     reset: false
   });
 
@@ -152,7 +152,7 @@ window.addEventListener("scroll", function() {
     duration: 1900,
     opacity: 0,
     distance: "90%",
-    origin: "right",
+    origin: "bottom",
     reset: false
   });
 
@@ -181,7 +181,7 @@ window.addEventListener("scroll", function() {
     duration: 1000,
     opacity: 0,
     distance: "30%",
-    origin: "left",
+    origin: "top",
     reset: false
   });
 
@@ -201,7 +201,7 @@ window.addEventListener("scroll", function() {
     duration: 1000,
     opacity: 0,
     distance: "30%",
-    origin: "right",
+    origin: "bottom",
     reset: false
   });
 
@@ -210,7 +210,7 @@ window.addEventListener("scroll", function() {
     duration: 1000,
     opacity: 0,
     distance: "30%",
-    origin: "right",
+    origin: "bottom",
     reset: false
   });
   

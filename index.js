@@ -241,7 +241,7 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
     duration: 1000,
     opacity: 0,
     distance: "80%",
-    origin: "right",
+    origin: "top",
     reset: false
   });
 

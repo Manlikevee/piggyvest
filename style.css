@@ -10,10 +10,11 @@
   :root {
     --color-text: navy;
     --color-bg: papayawhip;
-    --color-bg-accent: #ecdcc0;
+    --color-bg-accent: #F9F9F9;
+
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
     --gap: calc(var(--size) / 14);
-    --duration: 60s;
+    --duration: 100s;
     --scroll-start: 0;
     --scroll-end: calc(-100% - var(--gap));
   }
@@ -935,15 +936,15 @@ color:
     -webkit-mask-image: linear-gradient(
       var(--mask-direction, to right),
       hsl(0 0% 0% / 0),
-      hsl(0 0% 0% / 1) 20%,
-      hsl(0 0% 0% / 1) 80%,
+      hsl(0 0% 0% / 1) 10%,
+      hsl(0 0% 0% / 1)90%,
       hsl(0 0% 0% / 0)
     );
             mask-image: linear-gradient(
       var(--mask-direction, to right),
       hsl(0 0% 0% / 0),
-      hsl(0 0% 0% / 1) 20%,
-      hsl(0 0% 0% / 1) 80%,
+      hsl(0 0% 0% / 1) 10%,
+      hsl(0 0% 0% / 1) 85%,
       hsl(0 0% 0% / 0)
     );
   }
@@ -982,7 +983,7 @@ color:
   
   .marquee--reverse .marquee__group {
     animation-direction: reverse;
-    -webkit-animation-delay: -3s;
+    -webkit-animation-delay: -4s;
             animation-delay: -3s;
   }
   
@@ -1033,11 +1034,29 @@ color:
     padding: calc(var(--size) / 10);
     border-radius: 0.5rem;
   }
+
+  .marquee .boxma{
+    display: flex;
+    place-items: center;
+    width: 350px;
+    fill: var(--color-text);
+    background: var(--color-bg-accent);
+    aspect-ratio: 16/9;
+    padding: 10px;
+    border-radius: 0.5rem;
+  }
   
   .marquee--vertical svg {
     aspect-ratio: 1;
     width: calc(var(--size) / 1.5);
     padding: calc(var(--size) / 6);
+  }
+
+  .marquee--vertical .boxma{
+    aspect-ratio: 1;
+    flex-direction: column;
+    width: calc(400px/ 1.5);
+    padding: 10px;
   }
   
   /* Parent wrapper */
@@ -1180,6 +1199,52 @@ line-height: 23px;
 letter-spacing: 0em;
 text-align: left;
 
+  }
+
+  .boxma{
+    display: flex;
+  width: 100%;
+  }
+  .boxma .boximage{
+    width: 200px;
+    height: fit-content;
+  }
+
+  .boxma img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .testimonialtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+
+  }
+
+  .testimonialhead{
+    color: #464F59;
+    font-family: DM Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .testimonialbody{
+    margin-top: 10px;
+    font-family: DM Sans;
+font-size: 13px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: black;
   }
   @media screen and (max-width:1200px) {
     .buildsavings{

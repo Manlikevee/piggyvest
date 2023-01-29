@@ -313,9 +313,27 @@ gsap.to(".image-stack", {y:-6, repeat:-1, duration:1,  yoyo: true, stagger:{
     origin: "left",
     reset: false
   });
+
+  ScrollReveal().reveal('.fourone',{
+    delay: 195,
+    duration: 1200,
+    opacity: 0,
+    distance: "50%",
+    origin: "top",
+    reset: false
+  });
   
 
+  ScrollReveal().reveal('.fourtwo',{
+    delay: 205,
+    duration: 1600,
+    opacity: 0,
+    distance: "50%",
+    origin: "bottom",
+    reset: false
+  });
   
+   
 
   
 

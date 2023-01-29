@@ -14,7 +14,7 @@
 
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
     --gap: calc(var(--size) / 14);
-    --duration: 100s;
+    --duration: 90s;
     --scroll-start: 0;
     --scroll-end: calc(-100% - var(--gap));
   }
@@ -175,6 +175,7 @@ nav{
     .navbar .navbar-header .navbar-toggler {
       display: block;
     }
+    
   }
   .navbar .navbar-header .navbar-toggler span {
     height: 2px;
@@ -867,8 +868,8 @@ text-align: left;
     width: 100%;
     height: 100%;
     display: flex;
-
-    height: 80vh;
+align-items: center;
+    height: fit-content;
     
   }
 
@@ -1230,7 +1231,7 @@ text-align: left;
     color: #464F59;
     font-family: DM Sans;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
@@ -1238,19 +1239,130 @@ text-align: left;
 
   .testimonialbody{
     margin-top: 10px;
+    font-family: inter;
     font-family: DM Sans;
 font-size: 13px;
 font-weight: 400;
 line-height: 19px;
 letter-spacing: 0em;
 text-align: left;
-color: black;
+color: #5e5b5b;
   }
+
+  .brands {
+    position: relative;
+    overflow: hidden;
+    height: 3.5rem;
+}
+
+.brands:hover .brands__wrapper,
+.brands:hover .brands__preWrapper {
+    animation-play-state: paused;
+}
+
+.brands__preWrapper {
+    position: relative;
+    width: 100%;
+    height: 8.5rem;
+    transform: translateX(0%);
+    animation: scroll1 50s linear infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    will-change: transform;
+}
+
+.brands__wrapper {
+    position: absolute;
+    white-space: nowrap;
+    transform: translateX(0%) translateZ(0);
+    animation: scroll2 60s linear infinite;
+    animation-delay: 1.4s;
+    animation-direction: alternate;
+    will-change: transform;
+}
+
+.brands__wrapper>a,
+.brands__wrapper>img {
+    position: relative;
+    display: inline-block;
+    margin: 0 1.2rem;
+    vertical-align: middle;
+}
+
+.brands__wrapper>a img {
+    max-width: 15rem;
+    max-height: 8.5rem;
+}
+
+@keyframes scroll1 {
+    0% {
+        transform: translateX(-0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0%) translateZ(0);
+    }
+
+    100% {
+        transform: translateX(-100%) translateZ(0);
+    }
+}
+
+.asfeatured{
+  display: flex;
+ 
+
+}
+.featurelogo{
+  width: 100%;
+  padding: 20px;
+}
+
+.featuretext{
+  color: #0C1825;
+font-size: 40px;
+font-weight: 700;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: left;
+padding: 20px;
+  width: 40%;
+}
+
   @media screen and (max-width:1200px) {
     .buildsavings{
         flex-direction: column;
         overflow: hidden;
     }
+
+    .asfeatured{
+      flex-direction: column;
+    }
+
+    .featuretext{
+      margin-bottom: 20px;
+      text-align: center;
+      width: 100%;
+font-size: 50px;
+font-weight: 700;
+line-height: 75px;
+letter-spacing: 0em;
+
+
+    }
+    .marquee--vertical .boxma {
+      aspect-ratio: auto;
+      flex-direction: row;
+      width: 100%;
+      padding: 0px;
+  }
+
     .fourmillionboys{
       display: flex;
       flex-direction: column;
@@ -1490,6 +1602,7 @@ left: -15%;
     .sectionone {
         height: fit-content;
     }
+
     .extra {
 
         left: 30%;
@@ -1576,6 +1689,18 @@ left: -15%;
     .saveone{
         padding: 40px;
     }
+
+    .featuretext{
+      margin-bottom: 20px;
+      text-align: center;
+      width: 100%;
+font-size: 40px;
+font-weight: 700;
+line-height: 45px;
+letter-spacing: 0em;
+
+
+    }
     .extra {
 
         left: 26%;
@@ -1626,6 +1751,12 @@ left: -15%;
     .image-stack {
         left: 0%;
     }
+
+    .marquee--vertical .boxma{
+      flex-direction: column;
+    }
+
+
 
     .som{
         font-size: 40px;
@@ -1722,10 +1853,35 @@ left: -15%;
         position: absolute;
         right: 15%;
     }
+
+    .testimonialbody {
+      margin-top: 10px;
+      font-family: inter;
+      font-family: DM Sans;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #5e5b5b;
+  }
+
     .extra {
 
         left: 16%;
         margin-left: auto;
+    }
+
+    .featuretext{
+      margin-bottom: 20px;
+      text-align: center;
+      width: 100%;
+font-size: 30px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0em;
+
+
     }
 
     .image-stack__item--top {
@@ -1803,6 +1959,14 @@ width: 130px;
             position: absolute;
             right: 11%;
         }
+        .buildtext {
+          width: 50%;
+          padding: 2px;
+          padding-top: 20px;
+          height: fit-content;
+          position: sticky;
+          top: 9%;
+      }
 
         .extra {
 

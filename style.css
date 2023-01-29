@@ -19,13 +19,7 @@
     --scroll-end: calc(-100% - var(--gap));
   }
   
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-text: papayawhip;
-      --color-bg: navy;
-      --color-bg-accent: #2626a0;
-    }
-  }
+
 
   
   
@@ -1602,6 +1596,14 @@ left: -15%;
     .sectionone {
         height: fit-content;
     }
+    .buildtext {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
 
     .extra {
 
@@ -1686,6 +1688,14 @@ left: -15%;
         margin-top: 90px;
         padding: 20px;
     }
+    .buildtext {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
     .saveone{
         padding: 40px;
     }
@@ -1820,6 +1830,14 @@ letter-spacing: 0em;
     .twocolumnflex{
         width: 100%;
     }
+    .buildtext {
+      width: 100% !important;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
     .floatingobjects {
         left: 254px;
         top: -10px;
@@ -1910,6 +1928,15 @@ letter-spacing: 0em;
         position: absolute;
         right: 11%;
     }
+    .buildtext {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
     .image-stack__item--top {
         right: 16%;
     }
@@ -2022,6 +2049,15 @@ width: 130px;
         left: 0%;
         margin-left: auto;
     }
+    .buildtext {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
     .circles {
         position: absolute;
         margin-top: 106px;

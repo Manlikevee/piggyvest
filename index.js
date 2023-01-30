@@ -63,21 +63,24 @@ function handleSmallScreens() {
 handleSmallScreens()
 
 
+function autoscroll() {
+  var navbar = document.getElementById("mynav");
 
-var navbar = document.getElementById("mynav");
+  // Listen for the scroll event on the window
+  window.addEventListener("scroll", function() {
+    // Get the current scroll position
+    var scrollPos = window.pageYOffset;
+  
+    // Add the "scrolled" class to the navbar element when the user has scrolled more than 50px
+    if (scrollPos > 50) {
+      navbar.classList.add("navscroll");
+    } else {
+      navbar.classList.remove("navscroll");
+    }
+  });
+}autoscroll()
 
-// Listen for the scroll event on the window
-window.addEventListener("scroll", function() {
-  // Get the current scroll position
-  var scrollPos = window.pageYOffset;
 
-  // Add the "scrolled" class to the navbar element when the user has scrolled more than 50px
-  if (scrollPos > 50) {
-    navbar.classList.add("navscroll");
-  } else {
-    navbar.classList.remove("navscroll");
-  }
-});
 
 gsap.fromTo(".tween", {stagger: 0.9, y:18,  yoyo: true}, {x:18 ,   repeat:-1,  duration:1.2, yoyo: true});
 

@@ -354,3 +354,18 @@ control.addEventListener("click", () => {
     marquee.classList.toggle("marquee--vertical")
   );
 });
+
+
+
+
+const testimonialHeads = document.querySelectorAll('.testimonialhead');
+
+fetch('https://randomuser.me/api/?results=10')
+  .then(response => response.json())
+  .then(data => {
+    const names = data.results.map(result => `${result.name.first} ${result.name.last}`);
+
+    testimonialHeads.forEach((head, index) => {
+      head.textContent = names[index % names.length];
+    });
+  });

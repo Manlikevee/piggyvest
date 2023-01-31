@@ -369,3 +369,10 @@ fetch('https://randomuser.me/api/?results=10')
       head.textContent = names[index % names.length];
     });
   });
+
+
+
+
+
+
+ 

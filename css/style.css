@@ -71,7 +71,7 @@ nav.open .sidebar {
   text-decoration: none;
 }
 .lists .nav-link:hover {
-  background-color: #4070f4;
+  background-color: #0C1825;
 }
 .nav-link .icon {
   margin-right: 14px;
@@ -97,9 +97,31 @@ nav.open .sidebar {
   pointer-events: none;
   transition: all 0.4s ease;
   background: rgba(0, 0, 0, 0.3);
+
+  position: fixed;
+  backdrop-filter: blur(3px);
 }
 nav.open ~ .overlay {
   opacity: 1;
   left: 260px;
   pointer-events: auto;
+}
+
+
+::-webkit-scrollbar {
+  width: 1px; 
+   background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 80px;
+}
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0,0,0,0.61);
+  -webkit-border-radius: 80px;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61);
+  -webkit-border-radius: 80px;
 }

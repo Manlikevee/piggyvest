@@ -110,6 +110,7 @@ nav .sidebar {
   position: fixed;
   top: 0;
   left: -100%;
+  z-index: 999;
   height: 100%;
   width: 260px;
   padding: 20px 0;
@@ -161,7 +162,8 @@ nav.open .sidebar {
   position: fixed;
   top: 0;
   left: -100%;
-  height: 1000vh;
+  height: 100vh;
+  z-index: 999999999999999;
   width: 200%;
   opacity: 0;
   pointer-events: none;
@@ -500,10 +502,7 @@ text-align: left;
     color: var(--subtitle-color2);
   }
 
-  .dashcard:active {
-    background-color: #AAA;
-    color: var(--subtitle-color2);
-  }
+ 
    
   
   .piggycard {
@@ -523,7 +522,7 @@ text-align: left;
 @media screen and (max-width:1200px) {
   .container {
       width: 100%;
-      position: relative;
+
 
       margin-left: auto;
       margin-right: auto;

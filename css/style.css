@@ -482,6 +482,30 @@ text-align: left;
     align-items: flex-start;
     padding: 20px;
   }
+  .dashtwo:hover{
+    cursor: pointer;
+    background: var(--header-bg-color2);
+    color: var(--subtitle-color2);
+  }
+  
+  
+  .dashone:hover{
+    cursor: pointer;
+    background: var(--header-bg-color2);
+    color: var(--subtitle-color2);
+  }
+  .dashthree:hover{
+    cursor: pointer;
+    background: var(--header-bg-color2);
+    color: var(--subtitle-color2);
+  }
+
+  .dashcard:active {
+    background-color: #AAA;
+    color: var(--subtitle-color2);
+  }
+   
+  
   .piggycard {
     font-family: Inter;
     font-size: 15px;
@@ -500,7 +524,7 @@ text-align: left;
   .container {
       width: 100%;
       position: relative;
-      z-index: -9999;
+
       margin-left: auto;
       margin-right: auto;
       padding-left: 15px;

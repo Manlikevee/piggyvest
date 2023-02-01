@@ -372,7 +372,20 @@ align-items: center;
 }
 
 
-.dashcard:hover{
+.dashtwo:hover{
+  cursor: pointer;
+  background: var(--header-bg-color2);
+  color: var(--subtitle-color2);
+}
+
+
+.dashone:hover{
+  cursor: pointer;
+  background: var(--header-bg-color2);
+  color: var(--subtitle-color2);
+}
+.dashthree:hover{
+  cursor: pointer;
   background: var(--header-bg-color2);
   color: var(--subtitle-color2);
 }

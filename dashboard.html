@@ -229,7 +229,7 @@ ncidunt earum corporis dolores omnis optio? Ipsam natus soluta, tempore eos adip
       menuBtns.forEach((menuBtn) => {
         menuBtn.addEventListener("click", () => {
           navBar.classList.toggle("open");
-          body.style.position = 'fixed';
+          body.style.overflow = 'hidden';
           body.style.width = '100%';
           console.log('working')
           
@@ -238,7 +238,7 @@ ncidunt earum corporis dolores omnis optio? Ipsam natus soluta, tempore eos adip
 
       overlay.addEventListener("click", () => {
         navBar.classList.remove("open");
-          body.style.position = '';
+          body.style.overflow = 'scroll';
       body.style.width = '';
       });
 

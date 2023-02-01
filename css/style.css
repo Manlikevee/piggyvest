@@ -298,8 +298,8 @@ align-items: center;
   color: var(--subtitle-color);
   box-shadow: 0 3px 3px 0 rgb(0 0 0 / 5%), 0 5px 15px 0 rgb(0 0 0 / 5%);
   border-radius: 20px;
-  transition: 0.7s background-color;
-  transition: 0.5s color;
+  transition: 0.9s background-color;
+  transition: 0.9s color;
 
 }
 
@@ -336,65 +336,40 @@ align-items: center;
   text-align: left;
   margin-top: 5px;
   margin-bottom: 15px;
-}
-.dashone .piggamount{
 
-color: #3B1B9C;
-
+  
 }
 
 
 
-.dashtwo .piggamount{
+
+
+.dashone {
+
+  color: #3B1B9C;
+  
+  }
+  
+
+.dashtwo {
   color: 
   #7913A0;
 }
 
-.dashthree .piggamount{
+.dashthree {
   color: 
   
 #720E4B;
 }
 
 
-.dashone .piggycarddetails{
-
-  color: #3B1B9C;
-  
-  }
-  
-  
-  
-  .dashtwo .piggycarddetails{
-    color: 
-    #7913A0;
-  }
-  
-  .dashthree .piggycarddetails{
-    color: 
-    
-  #720E4B;
-  }
-
-
-  .dashone .piggycard{
-
-    color: #3B1B9C;
-    
-    }
+.dashcard:hover{
+  background: var(--header-bg-color2);
+  color: var(--subtitle-color2);
+}
     
     
-    
-    .dashtwo .piggycard{
-      color: 
-      #7913A0;
-    }
-    
-    .dashthree .piggycard{
-      color: 
-      
-    #720E4B;
-    }
+   
   
   
 
@@ -438,6 +413,8 @@ text-align: left;
 }
 
 
+
+
 @media screen and (max-width:800px) {
   .dashboardcontent {
     padding: 20px;
@@ -446,6 +423,10 @@ text-align: left;
   font-size: 27px;
   line-height: normal;
   margin-bottom: 16px;
+}
+.dashcards{
+  column-gap: 30px;
+    row-gap: 30px;
 }
 
   .dashcard {

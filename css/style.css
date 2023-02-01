@@ -288,6 +288,7 @@ align-items: center;
 }
 
 .dashcards {
+  margin-top: 16px;
   width: 100%;
   display: grid;
   align-items: center;
@@ -299,7 +300,7 @@ align-items: center;
 }
 
 .dashcard {
-  height: 218px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -530,4 +531,31 @@ text-align: left;
       padding-right: 15px;
     }
   
+}
+
+
+.sectiotwo {
+  margin-top: 26px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 1px;
+  text-decoration: none;
+}
+
+.experience{
+  height: 100%;
+  background-color: purple;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.converter{
+  border-radius: 20px;
+  height: 100%;
+  padding: 50px;
+  background-color: orange;
 }

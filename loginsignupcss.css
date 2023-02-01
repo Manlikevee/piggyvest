@@ -180,7 +180,7 @@ text-align: left;
     border: 1px solid #ccc;
     font-size: 14px;
     line-height: normal !important;
-    font-family: 'inter';
+
     border-radius: 4px;
     box-sizing: border-box;
     background: var(--theme-bg-color);
@@ -188,7 +188,7 @@ text-align: left;
     outline-color: transparent;
 }
 .forminput input[type=submit] {
-    font-family: inherit;
+  font-family: 'DM Sans', sans-serif;
     width: 100%;
     font-size: 14px;
     background: #0C1825;
@@ -294,9 +294,9 @@ color: var(--subtitle-color);
 
 .welcomemessage{
     color: rgb(12, 12, 12);
-font-size: 38px;
+font-size: 34px;
 font-weight: 600;
-line-height: 42px;
+line-height: 36px;
 letter-spacing: -2px;
 text-align: left;
 padding: 10px;
@@ -305,9 +305,9 @@ padding: 10px;
 
 .presource{
     padding: 10px;
-font-size: 19px;
+font-size: 17px;
 font-weight: 400;
-line-height: 25px;
+line-height: normal;
 letter-spacing: 0px;
 text-align: left;
 color: 
@@ -328,7 +328,46 @@ text-align: left;
 
 }
 
+.signupstore{
+  overflow-y: scroll;
+  min-height: 60vh;
+  padding: 5px;
+}
 
+
+
+.mainLoginInput::-webkit-input-placeholder {
+    font-family: 'inter';
+}
+
+.mainLoginInput:-ms-input-placeholder {
+    font-family: 'inter';
+}
+
+.mainLoginInput:-moz-placeholder {
+    font-family: 'inter';
+}
+
+.mainLoginInput::-moz-placeholder {
+    font-family: 'inter';
+}
+  ::-webkit-scrollbar {
+  width: 0px; 
+   background-color: #ccc;
+  -webkit-border-radius: 30px;
+}
+  ::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+  ::-webkit-scrollbar-thumb:vertical {
+  background: #ccc;
+  -webkit-border-radius: 30px;
+}
+ ::-webkit-scrollbar-thumb:vertical:active {
+  background: #ccc;
+  -webkit-border-radius: 80px;
+}
 @media screen and (max-width:1100px) {
     .loginbox{
         flex-direction: column;

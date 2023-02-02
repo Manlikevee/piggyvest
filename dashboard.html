@@ -125,7 +125,7 @@
   </div>
 </div>
 
-
+<br>
 
 <div class="dashcards">
   <div class="dashcard dashone">
@@ -204,11 +204,73 @@
   </div>
 </div>
 <br>
+<br>
 
 
 <div class="sectiotwo">
-  <div class="experience"></div>
-  <div class="converter"></div>
+  <div class="experience">
+    <div class="experiencetop">
+    <div>
+      Experience True Digital Banking Experience
+    </div> 
+
+    <span>Try it now  
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.43 18.82C14.24 18.82 14.05 18.75 13.9 18.6C13.61 18.31 13.61 17.83 13.9 17.54L19.44 12L13.9 6.46C13.61 6.17 13.61 5.69 13.9 5.4C14.19 5.11 14.67 5.11 14.96 5.4L21.03 11.47C21.32 11.76 21.32 12.24 21.03 12.53L14.96 18.6C14.81 18.75 14.62 18.82 14.43 18.82Z" fill="#0F0F11"/>
+      <path d="M20.33 12.75H3.5C3.09 12.75 2.75 12.41 2.75 12C2.75 11.59 3.09 11.25 3.5 11.25H20.33C20.74 11.25 21.08 11.59 21.08 12C21.08 12.41 20.74 12.75 20.33 12.75Z" fill="#0F0F11"/>
+      </svg>
+      </span>
+    </div>
+
+    <div class="experiencebottom">
+     <div class="recent">
+<div class="recenttext">Recent transactions</div>  <div class="viewall">
+  <span>View all 
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.43 18.82C14.24 18.82 14.05 18.75 13.9 18.6C13.61 18.31 13.61 17.83 13.9 17.54L19.44 12L13.9 6.46C13.61 6.17 13.61 5.69 13.9 5.4C14.19 5.11 14.67 5.11 14.96 5.4L21.03 11.47C21.32 11.76 21.32 12.24 21.03 12.53L14.96 18.6C14.81 18.75 14.62 18.82 14.43 18.82Z" fill="#0F0F11"/>
+    <path d="M20.33 12.75H3.5C3.09 12.75 2.75 12.41 2.75 12C2.75 11.59 3.09 11.25 3.5 11.25H20.33C20.74 11.25 21.08 11.59 21.08 12C21.08 12.41 20.74 12.75 20.33 12.75Z" fill="#0F0F11"/>
+    </svg>
+    </span>
+</div>
+     </div> 
+    </div>
+
+  </div>
+  <div class="converter">
+    <div class="recenttext">Convert funds</div>
+    <div class="currencyconvert">
+      Users are able to convert from one currency to another
+    </div>
+<br>
+
+    <div class="currencyfield">
+      <input type="number" placeholder="0.00" id="input_amount" value="1"> <select name="" id="input_currency"> 
+        <option value="NGN" selected>USD</option>
+      </select>
+    </div>
+
+    <div id="exchange">
+   <span id="exc">
+    ↕   
+   </span>   
+    </div>
+
+    <div class="currencyfield">
+      <input type="number" placeholder="0.00" id="output_amount"> 
+      <select name="" id="output_currency"> 
+        <option value="USD" selected>USD</option>
+        <option value="GHC">GHC</option>
+      </select>
+    </div>
+    <div class="result">
+      <div class="rate" id="rate"></div>
+
+</div>
+
+    <div class="currencysubmit">
+<button type="submit" id="">Fund Amount</button>
+    </div>
+  </div>
 </div>
 <br>
 <br>
@@ -249,5 +311,45 @@ ncidunt earum corporis dolores omnis optio? Ipsam natus soluta, tempore eos adip
     </script>
 
 
+
+
+<script src="optionpopulate.js"></script>
+
+
+<script>
+  const input_currency = document.querySelector('#input_currency');
+const output_currency = document.querySelector('#output_currency');
+const input_amount = document.querySelector('#input_amount');
+const output_amount = document.querySelector('#output_amount');
+const exchange = document.querySelector('#exc');
+const rate = document.querySelector('#rate');
+
+input_currency.addEventListener('change', compute);
+output_currency.addEventListener('change', compute);
+input_amount.addEventListener('input', compute);
+output_amount.addEventListener('input', compute);
+
+exchange.addEventListener('click', ()=>{
+    const temp = input_currency.value;
+    input_currency.value = output_currency.value;
+    output_currency.value= temp;
+    compute();
+});
+
+function compute(){
+    const input_currency1 = input_currency.value;
+    const output_currency1 = output_currency.value;
+    fetch(`https://api.exchangerate-api.com/v4/latest/${input_currency1}`)
+    .then(res => res.json())
+    .then(res => {
+        const new_rate = res.rates[output_currency1];
+        rate.innerText = `1 ${input_currency1} = ${new_rate} ${output_currency1}`
+        output_amount.value = (input_amount.value * new_rate).toFixed(2);
+    })
+}
+
+compute();
+
+</script>
   </body>
 </html>

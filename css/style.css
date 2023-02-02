@@ -667,6 +667,40 @@ color: #0F0F11;
   .dashboardcontent {
     padding: 20px;
 }
+
+.experiencetop div{
+  font-family: Inter;
+font-size: 20px;
+font-weight: 900;
+line-height: normal;
+letter-spacing: -0.03em;
+text-align: left;
+color:#0F0F11;
+
+}
+
+.experiencetop {
+  display: flex;
+  height: 166px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 24px;
+}
+
+.recenttext{
+  width: 100%;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #0F0F11;
+}
+.experiencebottom{
+  margin-top: 50px;
+}
+
 .largetext{
   font-size: 27px;
   line-height: normal;
@@ -694,6 +728,9 @@ color: #0F0F11;
   .piggamount{
     margin-bottom: 10px;
   }
+  .converter{
+    padding: 20px;
+  }
   
 }
 
@@ -708,6 +745,7 @@ color: #0F0F11;
     align-items: flex-start;
     padding: 20px;
   }
+
   .dashtwo:hover{
     cursor: pointer;
     background: var(--header-bg-color2);
